@@ -1,0 +1,128 @@
+#main{
+    width: 100%;
+}
+#cnav {
+    width: 100%;
+}
+.cnav {
+    height: 175px;
+}
+html{
+    background-color: #fff;
+}
+.cav>img{
+    width: 100%;
+    height: 60px;
+    margin-top: 15px;
+    float: left;
+}
+.cnav h1{
+    float: left;
+    width: 190px;
+    height: 100px;
+    line-height: 100px;
+}
+.cnav input{
+    float: right;
+    border: 2px solid #ff6600;
+    width: 300px;
+    height: 28px;
+    margin-top: 33px;
+}
+.cnav button{
+    float: right;
+    width: 80px;
+    height: 34px;
+    outline: none;
+    border: none;
+    background-color: #ff6600;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 33px;
+}
+.cartreset{
+    display: none;
+    width: 1190px;
+    height: 320px;
+    background:url(https://res.suning.cn/project/ccf/css/images/cart-empty-bg2.png?v=022da505d92280384ffd29611902b392)no-repeat 124px 47px;
+}
+.cartreset h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 250px;
+}
+.cartreset h1 a {
+    color: #ff6600;
+}
+.cart{
+    width: 1190px;
+    float: left;
+}
+.cart thead{
+    width: 1190px;
+    height: 34px;
+    display: block;
+}
+.cart thead th{
+    display: inline-block;
+    line-height: 34px;
+    margin-right: 133px;
+ }
+ tbody{
+    width: 1190px;
+    display: block;
+ }
+tbody th{
+    float: left;
+    color: #333;
+    margin-right: 90px;
+    margin-top: 15px;
+  }
+tbody th img{
+    float: left;
+    width: 100px;
+    height: 100px;
+       
+}
+tbody th input {
+    width: 20px;
+    border: 1px solid #dddddd;
+    height: 20px;
+    text-align: center;
+}
+tbody tr{
+    display: block;
+    width: 1188px;
+    height: 132px;
+    background-color: rgb(255,251,242);
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+.jiesuan{
+    margin-top: 50px;
+    width: 1188px;
+    height: 57px;
+    line-height: 57px;
+    border: 1px solid #dddddd;
+}
+.jiesuan div {
+    float: right;
+}
+.jiesuan div button{
+    width: 190px;
+    height: 59px;
+    border: none;
+    outline: none;
+    background-color: #ff6600;
+    color: #fff;
+}
+.jiesuan div span{
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff6600;
+}
+#del{
+    cursor: pointer;
+}

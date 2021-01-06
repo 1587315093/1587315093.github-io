@@ -1,0 +1,192 @@
+html{
+    background-color: #fff;
+}
+#head{
+    width: 100%;
+}
+.head{
+    height: 100px;
+}
+.head h1 {
+    float: left;
+}
+.head h1 a {
+    float: left;
+}
+.head img{
+    width: 188px;
+    height: 100px;
+    float: left;
+}
+.head div{
+    float: left;
+    width: 746px;
+    height: 25px;
+    border: 1px solid #fecd66;
+    background-color: #fefff1;
+    color: #333;
+    line-height: 25px;
+    padding:  0 5px;
+    margin: 35px 0 0 20px;
+}
+.head div span{
+    color: #ff6600;
+}
+.head a{
+   float: right;
+   color: #333;
+  
+}
+.head a i{
+   font-size: 18px;
+}
+#main {
+    width: 100%;
+    min-height: 570px;
+    background: url(https://image.suning.cn/uimg/cms/img/160946391612389622.jpg) center no-repeat;
+}
+.main {
+    min-height: 570px;
+}
+.login{
+    float: right;
+    width: 360px;
+    height: 430px;
+    background-color: #fff;
+    margin-top: 50px;
+}
+.loginhead {
+     width: 360px;
+     height: 50px;
+     border-bottom: 1px solid #f5f5f5;
+}
+.loginhead span{
+    float: left;   
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    color: #333;
+   
+}
+.loginhead .smdl{
+    display: inline-block;
+    color: #ff6600;
+    width: auto;
+    height: 47px;
+    border-bottom: 3px solid red;
+}
+.zhdl {
+    display: inline-block;
+    height: 47px;
+}
+.zhdl:hover {
+    color:#ff6600 ;
+}
+.loginbody {
+    width: 360px;
+    height: 240px;
+    text-align: center;
+    margin-top: 20px;
+   
+}
+
+.lgimg1{
+    float: left;   
+    margin: 40px 10px 30px 100px;
+}
+.lgimg2{
+    float: left;
+    display: none;
+}
+.loginbody p{
+    float: left;
+    font-size: 12px;
+    color: #333;
+}
+.loginbody p a{
+   color: #ff6600;
+}
+.loginbody p i{
+    font-size: 16px;
+    text-align: center;
+    margin-left: 90px;
+}
+.logfoot{
+    width: 360px;
+    height: 121px;
+    text-align: center;
+}
+.logfoot a{
+    display: block;
+    color: #ff6600;
+    margin: 0px 0 20px 0;
+}
+.logfoot p a{
+    color: #333;
+    display: inline-block;
+    margin: 10px 10px;
+}
+.logfoot p a:hover{
+    color: #ff6600;
+}
+.logbody2 form {
+    margin-top: 30px;
+}
+.logbody2 form div {
+    width: 312px;
+    height: 38px;
+    border: 1px solid #dddddd;
+    margin: 0px 0 20px 0 ;
+}
+.logbody2 form div:nth-child(2){
+    margin-bottom: 35px;
+}
+.logbody2 {
+    width: 312px;
+    height: 240px;
+    margin-top: 20px;
+    display: block;
+    padding:  0 24px;
+    overflow: hidden;
+     display: none;
+}
+.logbody2 form div input {
+   width: 238px;
+   height: 36px;
+   border: none;
+   float: left;
+   color: #333333;
+   font-size: 14px;
+}
+.logbody2 form div i {
+    float: left;
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 36px;
+    color: #dddddd;
+}
+.logbody2 form p a:nth-child(1){
+    float: left;
+}
+.logbody2 form p a:nth-child(2){
+    float: right;
+}
+.logbody2 form button {
+    width: 310px;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: #ff6600;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.logbody2 form button:hover{
+    background: rgb(255,85,0);
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="shortcut icon" href="https://passport.suning.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+
+<body>
+    <header id="headnav">
+        <nav class="nav banxin">
+            <div class="leftnav">
+                <span class="wzdh headnavbox">
+                    <a href="#" class="navlj">网站导航 <i class="iconfont icon-xjt rotate180"></i></a>
+                    <div class="wzdhhezi headnavboxs">
+                        <b class="wzdhhezigb">X</b>
+                        <dl>
+                            <dt>特色购物</dt>
+                            <dd>
+                                <p><a href="#">苏宁互联</a><a href="#">苏宁达人</a></p>
+                                <p><a href="#">苏宁卡</a><a href="#">苏宁国际</a></p>
+                                <p><a href="#">易回收</a><a href="#">二手优品</a></p>
+                                <p><a href="#">领券中心</a><a href="#">苏宁Outlets</a></p>
+                                <p><a href="#">导购指南</a><a href="#">江苏馆</a></p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>主题频道</dt>
+                            <dd>
+                                <p><a href="#">电器城</a><a href="#">苏宁超市</a></p>
+                                <p><a href="#">手机</a><a href="#">运动馆</a></p>
+                                <p><a href="#">图书</a><a href="#">红孩子母婴</a></p>
+                                <p><a href="#">美妆个护</a><a href="#">电脑</a></p>
+                                <p><a href="#">服装城</a><a href="#">智能生活</a></p>
+                                <p><a href="#">家装馆</a><a href="#">苏宁汽车</a></p>
+                                <p><a href="#">排行榜</a><a href="#">医药馆</a></p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>手机充值</dt>
+                            <dd>
+                                <p><a href="#">零钱宝热</a><a href="#">手机充值</a></p>
+                                <p><a href="#">转账还款</a><a href="#">约服务</a></p>
+                                <p><a href="#">水电煤</a><a href="#">保险</a></p>
+                                <p><a href="#">机票</a><a href="#">酒店</a></p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>会员服务</dt>
+                            <dd>
+                                <p><a href="#">会员联盟热</a><a href="#">延长保修</a></p>
+                                <p><a href="#">易付宝</a><a href="#">苏宁理财</a></p>
+                                <p><a href="#">苏宁金融</a></p>
+                            </dd>
+                        </dl>
+                        <dl class="wubiankuang">
+                            <dt>更多热点</dt>
+                            <dd>
+                                <p><a href="#">PP视频</a><a href="#">合作招商</a></p>
+                                <p><a href="#">苏宁联盟</a><a href="#">用户体验</a></p>
+                                <p><a href="#">苏宁云</a><a href="#">苏宁足球</a></p>
+                                <p><a href="#">苏宁公益</a><a href="#">苏宁有货</a></p>
+                            </dd>
+                        </dl>
+                    </div>
+                </span>
+                <span class="sjrz headnavbox"><a href="#" class="navlj">商家入驻 <i
+                            class="iconfont icon-xjt rotate180"></i></a>
+                    <div class="sjrzhezi headnavboxs">
+                        <p><a href="#">合作招商</a><a href="#">服务市场</a></p>
+                        <p><a href="#">金融中心</a><a href="#">培训中心</a></p>
+                        <p><a href="#">易通天下</a><a href="#">规则中心</a></p>
+                        <p><a href="#">规则众议院</a></p>
+                    </div>
+                </span>
+                <span class="khfw headnavbox"> <a href="#" class="navlj navljbs">客户服务 <i
+                            class="iconfont icon-xjt rotate180"></i></a>
+                    <div class="khfwhezi headnavboxs">
+                        <p><a href="#">苏宁帮客</a><a href="#">帮助中心</a></p>
+                        <p><a href="#">退换/维修</a><a href="#">意见反馈</a></p>
+                        <p><a href="#">30天包退</a><a href="#">售后无忧</a></p>
+                        <p><a href="#">在线咨询</a></p>
+                    </div>
+                </span>
+                <span> <a href="#" class="navlj"><i id="dw" class="iconfont icon-dingwei"></i> 深圳 <i
+                            class="iconfont icon-xiajt"></i></a></span>
+            </div>
+            <div class="rightnav">
+                <span><a href="./login.html" class="navlj">请登录</a></span>
+                <span><a href="./register.html" class="yanse navlj">注册有礼</a></span>
+                <span class="wddd headnavbox"><a href="#" class="navlj ">我的订单 <i
+                            class="iconfont icon-xjt rotate180"></i></a>
+                    <div class="wdddhezi headnavboxs">
+                        <p><a href="#">待支付</a></p>
+                        <p><a href="#">待收货</a></p>
+                        <p><a href="#">待评价</a></p>
+                        <p><a href="#">修改订单</a></p>
+                    </div>
+                </span>
+                <span class="wdyg headnavbox"><a href="#" class="navlj ">我的易购 <i
+                            class="iconfont icon-xjt rotate180"></i></a>
+                    <div class="wdyghezi headnavboxs">
+                        <p><img src="../images/gwclogo_03.jpg"><a href="#" class="wdygdl">请登录</a></p>
+                        <p><a href="#">我的消息</a><a href="#">我的关注</a></p>
+                        <p><a href="#">我的金融</a><a href="#">苏宁会员</a></p>
+                        <p><a href="#">我的任性付</a><a href="#">我的优惠券</a></p>
+                    </div>
+                </span>
+                <span><a href="#" class="navlj ">苏宁会员</a></span>
+                <span class="gwc headnavbox"><a href="#" class="yanse navlj"><i class="iconfont icon-navgwc "></i> 购物车
+                    </a>
+                    <i class="iconfont icon-xjt rotate180"></i>
+                    <div class="gwchezi headnavboxs">
+                        <img src="../images/gwctp.jpg" alt="">
+                        <p>不要让您的购物车空着哦，快去逛逛吧</p>
+                        <p class="gwcheziziti">如果您已添加过宝贝,那就赶紧登录查看吧</p>
+                        <p><button>登录</button></p>
+                    </div>
+                </span>
+                <span><a href="#" class="navlj ">易付宝</a></span>
+                <span><a href="#" class="navlj ">企业采购</a></span>
+                <span class="sjsn headnavbox"><a href="#" class="navlj ">手机苏宁 <i
+                            class="iconfont icon-xjt rotate180"></i></a>
+                    <div class="sjsnhezi headnavboxs">
+                        <img src="../images/sjsn.png" alt="">
+                        <p><b>扫一扫</b> <b>关注苏宁推客公众号</b><b>扫一扫</b><b>扫一扫</b></p>
+                        <p><b>下载苏宁易购APP</b> <b>自购省钱·分享赚钱</b><b>下载苏宁金融APP</b><b>关注苏宁易购服务号</b></p>
+                    </div>
+                </span>
+            </div>
+        </nav>
+    </header>
+    <section id="cnav ">
+        <section class="cnav banxin">
+            <img src="https://image.suning.cn/uimg/aps/material/155904346710465225.jpg" alt="">
+            <h1><a href="./index.html"><img
+                        src="https://image2.suning.cn/uimg/cms/img/159601671210506961.png?v=2020122901" alt=""></a></h1>
+            <button>搜索</button>
+            <input type="text">
+        </section>
+    </section>
+    <section id="main">
+        <section class="main banxin">
+            <div class="cart">
+                <table>
+                    <thead>
+                        <th><input type="checkbox">全选</th>
+                        <th>商品信息</th>
+                        <th>规格</th>
+                        <th>单价(元)</th>
+                        <th>数量</th>
+                        <th>小计(元)</th>
+                        <th>操作</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <div class="jiesuan">
+                    <input type="checkbox">全选
+                    <a href="#" id="dels">删除选中商品</a>
+                    <div>
+                        总价<span id="zongji"></span>
+                        <button>去结算</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cartreset">
+                <h1>购物车是空的 <a href="./login.html">登录</a> 看看吧</h1>
+            </div>
+        </section>
+    </section>
+    <section id="footbq">
+        <section class="footbq banxin">
+            <p class="footp1"><a href="#">苏宁互联</a>|<a href="#">苏宁金融</a>|<a href="#">苏宁支付</a>|<a href="#">PP视频</a>|<a
+                    href="#">红孩子</a>|<a href="#">苏宁物流</a>|<a href="#">手机苏宁</a>|<a href="#">零售云</a>|<a
+                    href="#">苏宁云</a>|<a href="#">知识产权举报</a>|<a href="#">投资者关系</a>|<a href="#">苏宁智能</a></p>
+            <p class="footp1"><a href="#">联系我们</a>|<a href="#">诚聘英才</a>|<a href="#">合作招商</a>|<a href="#">广告平台</a>|<a
+                    href="#">苏宁联盟</a>|<a href="#">苏宁招标</a>|<a href="#">隐私政策</a>|<a href="#">用户体验提升计划</a>|<a
+                    href="#">股东会员认证</a></p>
+            <p>Copyright@
+                2002-2020，苏宁易购集团股份有限公司版权所有&nbsp;&nbsp;│&nbsp;&nbsp;苏公网安备32010202010078号&nbsp;&nbsp;│&nbsp;&nbsp;苏ICP备10207551号-4
+            </p>
+            <p>合字B2-20180025|合字A1.B1.B2-20180017&nbsp;&nbsp;|&nbsp;&nbsp;出版物经营许可证新出发苏批字第A-243号&nbsp;&nbsp;│&nbsp;&nbsp;互联网药品信息服务资格证书(苏)-非经营性-2016-0005
+            </p>
+            <p>经营证照&nbsp;&nbsp;│&nbsp;&nbsp;网络文化经营许可证:苏网文(2018〕10580-203号&nbsp;&nbsp;│&nbsp;&nbsp;互联网违法和不良信息举报邮箱:
+                k6pt-yy@cnsuning.com &nbsp;&nbsp;│&nbsp;&nbsp;举报电话:0256699569-865948</p>
+            <p>医疗器械网络交易服务第三方平台备案凭证-(苏)网械平台备字(2018）第00052号</p>
+            <p>本网站直接或间接向消费者推销商品或者服务的商业宣传均属于“广告”(包装及参数、售后保障等商品信息除外)</p>
+            <p>
+                <img src="https://res.suning.cn/public/v3/images/wxrz.png" alt="">
+                <img src="https://res.suning.cn/public/v3/images/chengxin.png" alt="">
+                <img src="https://res.suning.cn/public/v3/images/unicom.png" alt="">
+                <img src="https://res.suning.cn/public/v3/images/dianxin.jpg" alt="">
+                <img src="https://res.suning.cn/public/v3/images/dianzizhizhao.png?v=01" alt="">
+                <img src="https://res.suning.cn/public/v3/images/netsafe1.png?v=01" alt="">
+                <img src="https://res.suning.cn/public/v3/images/netsafe2.png?v=01" alt="">
+                <img src="https://res.suning.cn/public/v3/images/netsafe3.png?v=01" alt="">
+            </p>
+        </section>
+    </section>
+</body>
+<script src="../js/jquery1.12.4.min.js"></script>
+<script src="../js/public.js"></script>
+<script>
+    $.each($('.headnavbox'), function (index, item) {
+        $(item).mouseenter(function () {
+            $(this).css({
+                backgroundColor: '#fff',
+                borderRight: '1px solid #ddd',
+                borderLeft: '1px solid #ddd'
+            })
+
+            $(this).children('.headnavboxs').stop().slideDown(100, 'linear')
+        })
+        $(item).mouseleave(function () {
+            $(this).css({
+                backgroundColor: "#f5f5f5",
+                borderRight: '1px solid #f5f5f5',
+                borderLeft: '1px solid #f5f5f5'
+            })
+            $(this).children('.headnavboxs').stop().slideUp(1, 'linear')
+        })
+    })
+
+    // 接数据
+    function getCart() {
+        var list = localStorage.getItem('cart') || "[]";
+        return JSON.parse(list);
+    }
+    function setCart(arr) {
+        localStorage.setItem('cart', JSON.stringify(arr))
+    }
+    //
+    var numss;
+    var zongji
+    showList()
+    function showList() {
+        var productList = getCart();
+        var index = productList.length - 1
+        if (productList.length < 1) {
+            $('.cart').css({ display: "none" })
+            $('.cartreset').css({ display: "block" })
+            return;
+        }
+        numss = productList[index].product_num;
+        $('tbody').empty();
+        $('.cart').css({ display: "block" })
+        $('.cartreset').css({ display: "none" })
+        var numbianhua = numss;
+        $('tbody').on('click', '#numjia', function () {
+            // 用户点击+
+            numss++
+            var that = $(this);
+            that.siblings('#shuliang').eq(0).val(numss)
+            xj = numss * productList[index].product_price
+            xj = xj.toFixed(2)
+            that.parent().next().html("小计:" + xj + "元")
+            zongji = xj
+            $('#zongji').html(zongji)
+        })
+        $('tbody').on('click', '#numjian', function () {
+            // 用户点击-
+            numss--
+            if (numss < 1) {
+                numss = 1;
+            }
+            var that = $(this);
+            that.siblings('#shuliang').eq(0).val(numss)
+            xj = numss * productList[index].product_price
+            xj = xj.toFixed(2)
+            that.parent().next().html("小计:" + xj + "元")
+            zongji = xj
+            $('#zongji').html(zongji)
+        })
+        // 删除
+        $('tbody').on('click', "#del", function () {
+            that = $(this)
+            alert("确定删除")
+            that.parent("tr").parent('tbody').children('tr').remove('tr');
+            localStorage.removeItem('cart')
+            showList()
+        })
+        xj = numss * productList[index].product_price
+        $.each(productList, function (index, product) {
+            $('tbody').empty();
+            $("tbody").append(` <tr>
+                            <th><input type="checkbox">${product.product_id}</th>
+                            <th><img src="${product.product_img}"
+                                    alt="">
+                                <p>${product.product_name}</p>
+                            </th>
+                            <th>克重:26g*10袋口味:五香味</th>
+                            <th>${product.product_price}</th>
+                            <th><button id="numjian">-</button><input type="text" value="${product.product_num}" id="shuliang"><button id="numjia">+</button></th>
+                            <th>小计：${xj} 元</th>
+                            <th id="del">删除</th>
+                        </tr>`)
+        })
+        zongji = xj
+        $('#zongji').html(zongji)
+    }
+
+
+
+
+</script>
+
+</html>

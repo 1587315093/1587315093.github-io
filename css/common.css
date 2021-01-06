@@ -1,0 +1,354 @@
+html{
+    background-color: rgb(242,242,242);
+}
+.banxin{
+    width: 1190px;
+    margin: 0 auto;
+}
+#fwbz{
+   width: 100%;
+   border-top: 1px solid #eaeaea;
+  
+}
+.fwbz{
+    padding: 12px 0px;
+    height: 74px;
+    border-bottom: 1px solid #eaeaea;
+}
+.fwbz ul li {
+    float: left;
+    width: 238px;
+}
+.fwbz ul li a img{
+    float: left;
+    margin-right: 5px;
+    width: 48px;
+    height: 48px;
+}
+.fwbz ul li a{
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    line-height: 25px;
+}
+.fwbz ul li p{
+    color: #545454;
+    font-size: 12px;
+}
+.footernav{
+    height: 180px;
+}
+.footernav dl{
+    float: left;
+    color: #545454;
+    margin-right: 150px;
+}
+.footernav .sbsn{
+    margin-right: 0;
+}
+.footernav dl a{
+    color: #545454;
+ }
+ .footernav dl dt {
+     font-size: 14px;
+     font-weight: bold;
+ }
+  .footernav dl dd {
+      line-height: 25px;
+  }
+#footbq{
+    background: #fff;
+}
+.footbq{
+    text-align: center;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.footp1 {
+    display: block;
+}
+.footbq .footp1 a{
+   display: inline-block;
+   padding:  0 10px;
+   line-height: 25px;
+}
+.footbq P{
+    color: #999999;
+    line-height: 25px;
+}
+.footbq P img{
+    height: 24px;
+}
+
+
+/* 顶部 */
+#headnav{
+    width: 100%;
+    height: 36px;
+    border-top: 1px solid #dadce0;
+    border-bottom: 1px solid #dddddd;
+    background-color: #f5f5f5;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.leftnav{
+    height: 36px;
+    width: 360px;
+}
+.rightnav{
+    width: 626px;
+    height: 36px;
+}
+.rightnav span{
+    float: left;
+    padding: 0 8px;
+    box-sizing: border-box;
+    height: 36px;
+}
+
+#dw{
+    color: #ffaa00;
+    font-size: 18px;
+}
+.yanse{
+    color: #ff6600;
+}
+#headnav a:hover{
+    color: #ff6600;
+}
+.leftnav span{
+    float: left;
+    width: 80px;
+    height: 36px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.navlj{
+    line-height:36px;
+}
+/* 网站导航样式 */
+.wzdh{
+    position: relative;
+}
+.rotate180 {
+    display: inline-block;  
+    transition: all .3s;
+}
+.headnavbox:hover i{
+    transform: rotate(-180deg);
+}
+.wzdh .wzdhhezi {
+    position: absolute;
+    left: -1px;
+    top: 36px;
+    width: 998px;
+    height: 241px;
+    box-sizing: border-box;
+    background-color:#fff;
+    padding: 15px 0;
+    display: none;
+    text-align: left;
+    border: 1px solid #dddddd;
+    border-top: 1px solid #fff;
+    z-index: 10;
+}
+.wzdh .wzdghezi .wubiankuang{
+    border: none;
+}
+.wzdhhezi dl{
+    width: 197px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    border-right: 1px solid #dadce0;
+    float: left;
+}
+.wzdhhezi .wubiankuang{
+    border: none;
+}
+.wzdhhezi b{
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 20px;
+    color: #d3c8cc;
+}
+.wzdhhezi dl dt{
+    height: 25px;
+    line-height: 17px;
+}
+.wzdhhezi dl dd a{
+    display: inline-block;
+    width: 75px;
+    line-height: 24px;
+}
+
+/* 商家入驻样式 */
+.sjrz{
+    position: relative;
+    
+}
+.sjrzhezi{
+    position: absolute;
+    width: 157px;
+    height: 124px;
+    border: 1px solid #dddddd;
+    border-top: 1px solid #fff;
+    left: -1px;
+    top: 36px;
+    display: none;
+    background-color:#fff;
+    z-index: 10;
+
+}
+.sjrzhezi a{
+    display:block;
+    width: 78px;
+    float: left;
+    line-height: 30px;
+}
+.khfw{
+    position: relative;
+}
+.khfwhezi{
+    position: absolute;
+    width: 157px;
+    height: 124px;
+    border: 1px solid #dddddd;
+    border-top: 1px solid #fff;
+    left: -80px;
+    top: 36px;
+    display: none;
+    background-color:#fff;
+    z-index: 10;
+
+}
+.khfwhezi a{
+    display:block;
+    width: 78px;
+    float: left;
+    line-height: 30px;
+}
+/* 顶部导航右边样式 */
+.wddd{
+    position: relative;
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+}
+.wdddhezi{
+    position: absolute;
+    left: -1px;
+    top: 36px;
+    width: 74px;
+    height: 124px;
+    border: 1px solid #dddddd;
+    border-top: 1px solid #fff;
+    padding-left: 10px;
+    display: none;
+    background-color:#fff;
+    z-index: 10;
+
+}
+.wdddhezi a{
+    display:block;
+    width: 83px;
+    line-height: 30px;
+}
+.wdyg{
+    position: relative;
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+}
+.wdyghezi{
+    position: absolute;
+    width: 195px;
+    height: 160px;
+    padding-left: 10px;
+    border: 1px solid #dddddd;
+    border-top: 1px solid #fff;
+    left: -1px;
+    top: 36px;
+    display: none;
+    background-color:#fff;
+    z-index: 10;
+
+}
+.wdyghezi>p{
+  margin-top: 10px;
+}
+.wdyghezi .wdygdl{
+    float: right;
+    margin-top: 13px;
+}
+.wdyghezi a{
+    width: 97px;
+    float: left;
+    line-height: 26px;
+}
+.gwc{
+    position: relative;
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+}
+.gwchezi{
+    position:absolute;
+    left: -1px;
+    top: 36px;
+    width: 280px;
+    height: 400px;
+    border: 1px solid #dddddd;
+    border-top: 1px solid #fff;
+    text-align: center;
+    display: none;
+     background-color:#fff;
+         z-index: 10;
+
+}
+.gwchezi img{
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+.gwchezi p {
+    font-size: 14px;
+    color: #dddddd;
+}
+.gwchezi .gwcheziziti{
+    font-size: 12px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.gwchezi p button{
+    color: #fff;
+    background-color: rgba(255,102,0);
+    border: none;
+    outline: none;
+    width: 68px;
+    height: 22px;
+}
+.sjsn{
+    position: relative;
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+}
+.sjsnhezi{
+    position: absolute;
+    right:-1px;
+    top: 36px;
+    width: 580px;
+    height: 190px;
+    border: 1px solid #dddddd;
+    border-top: 1px solid #fff;
+    text-align: center;
+    display: none;
+     background-color:#fff;
+         z-index: 10;
+
+}
+.sjsnhezi p b{
+    display: inline-block;
+    width: 140px;
+    line-height: 20px;
+    color: rgba(102,102,102);
+}

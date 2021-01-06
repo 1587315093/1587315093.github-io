@@ -1,0 +1,118 @@
+html {
+    background-color: rgb(248,248,248);
+}
+#footbq{
+    background-color: rgb(248,248,248);
+}
+.banxin{
+    width: 990px;
+}
+#head {
+    width: 100%;
+}
+.head {
+    height: 88px;
+}
+.head h1{
+    float: left;
+    font-size: 0px;
+}
+.head h1 img {
+    width: 190px;
+    height: 88px;
+}
+.head h2 {
+    float: left;
+    font-size: 18px;
+    color: #666666;
+    line-height: 88px;
+    margin-left: 20px;
+}
+.head>a{
+    color: #333;
+    margin-top: 65px;
+    float: right;
+}
+.head>a:hover{
+    color:#ff6600;
+}
+#main{
+    width: 100%;
+}
+.main {
+    height: 443px;
+    background-color: #fff;
+    border-top: 3px solid #ff6600;
+}
+.main form {
+    width: 380px;
+    height: 327px;
+    margin:  50px auto 0px auto;
+}
+.main div{
+    display: block;
+    width: 368px;
+    height: 36px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    padding-left: 10px;
+    position: relative;
+}
+.main p {
+    font-size: 14px;
+}
+.main p span{
+    color: #ff4400;
+}
+.main i {
+    line-height: 36px;
+    width: 87px;
+    height: 38px;
+    float: left;
+    color: #222;
+}
+.main form div input {
+    width: 277px;
+    height: 34px;
+    float: left;
+    border: none;
+}
+.main form div .yzm{
+    width: 127px;
+}
+#hqyzm {
+    width: 150px;
+    height: 38px;
+    border: none;
+    outline: none;
+    border-left: 1px solid #ddd;
+}
+#tijiao{
+    width: 380px;
+    height: 40px;
+    background-color: #ff6600;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+form h5 {
+    font-size: 14px;
+}
+form h5 a{
+   color: #ff6600;
+}
+
+h4{
+    position: absolute;
+    right: -130px;
+    top: 7px;
+    display: none;
+}
+.zcpwdh4{
+   right: 50px;
+   top: 40px;
+}
