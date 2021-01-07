@@ -233,7 +233,7 @@
                 <button class="ljgm">立即购买</button>
                 <button class="incart" id="add" data-id="11" data-name="洽洽瓜子" data-price="10.01"
                     data-img="https://imgservice.suning.cn/uimg1/b2c/image/ZZfd60xs2ZYRwBwmA2IFrQ.jpg_100w_100h_4e"
-                    data-num="1">加入购物车</button>
+                    data-num="1" data-xj="10.01">加入购物车</button>
             </div>
         </section>
     </section>
@@ -351,22 +351,36 @@
         var list = localStorage.getItem('cart') || "[]";
         return JSON.parse(list);
     }
+
     function setCart(arr) {
         localStorage.setItem('cart', JSON.stringify(arr))
     }
-    var nweProduct;
     $('#add').click(function () {
-        $("#add").data("num", num);
-        nweProduct = {
+        var nweProduct = {
             product_id: $("#add").data('id'),
             product_name: $("#add").data('name'),
             product_img: $("#add").data('img'),
             product_price: $("#add").data('price'),
-            product_num: $("#add").data('num')
+            product_num: $("#add").data('num'),
+            product_xj: $("#add").data('xj')
         }
         var productList = getCart();
-        productList.push(nweProduct);
-        setCart(productList);
+        if (productList.length == 0) {
+            productList.push(nweProduct);
+            setCart(productList);
+        } else {
+            for (var i = 0; i < productList.length; i++) {
+                if (productList[i].product_id == $("#add").data('id')) {
+                    num++
+                    productList[i].product_num = num;
+                    productList[i].product_xj = num * productList[i].product_price
+                    setCart(productList);
+                    return;
+                }
+            }
+            productList.push(nweProduct);
+            setCart(productList);
+        }
     })
 
 </script>

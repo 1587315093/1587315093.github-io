@@ -159,7 +159,24 @@
                         <th>操作</th>
                     </thead>
                     <tbody>
-
+                        <!-- <tr>
+                            <th>5</th>
+                            <th>5</th>
+                            <th>5</th>
+                            <th>5</th>
+                            <th>5</th>
+                            <th>5</th>
+                            <th>5</th>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <th>5</th>
+                            <th>5</th>
+                            <th>5</th>
+                            <th>5</th>
+                            <th>5</th>
+                            <th>5</th>
+                        </tr> -->
                     </tbody>
                 </table>
                 <div class="jiesuan">
@@ -238,73 +255,125 @@
         localStorage.setItem('cart', JSON.stringify(arr))
     }
     //
-    var numss;
-    var zongji
     showList()
     function showList() {
         var productList = getCart();
-        var index = productList.length - 1
+        //获取详情页上传至本地的数据
+        // 没有商品显示登录
         if (productList.length < 1) {
             $('.cart').css({ display: "none" })
             $('.cartreset').css({ display: "block" })
             return;
         }
-        numss = productList[index].product_num;
         $('tbody').empty();
         $('.cart').css({ display: "block" })
         $('.cartreset').css({ display: "none" })
-        var numbianhua = numss;
-        $('tbody').on('click', '#numjia', function () {
-            // 用户点击+
-            numss++
-            var that = $(this);
-            that.siblings('#shuliang').eq(0).val(numss)
-            xj = numss * productList[index].product_price
-            xj = xj.toFixed(2)
-            that.parent().next().html("小计:" + xj + "元")
-            zongji = xj
-            $('#zongji').html(zongji)
-        })
-        $('tbody').on('click', '#numjian', function () {
-            // 用户点击-
-            numss--
-            if (numss < 1) {
-                numss = 1;
-            }
-            var that = $(this);
-            that.siblings('#shuliang').eq(0).val(numss)
-            xj = numss * productList[index].product_price
-            xj = xj.toFixed(2)
-            that.parent().next().html("小计:" + xj + "元")
-            zongji = xj
-            $('#zongji').html(zongji)
-        })
-        // 删除
-        $('tbody').on('click', "#del", function () {
-            that = $(this)
-            alert("确定删除")
-            that.parent("tr").parent('tbody').children('tr').remove('tr');
-            localStorage.removeItem('cart')
-            showList()
-        })
-        xj = numss * productList[index].product_price
+        $('tbody').empty();
         $.each(productList, function (index, product) {
-            $('tbody').empty();
             $("tbody").append(` <tr>
-                            <th><input type="checkbox">${product.product_id}</th>
+                            <th><input type="checkbox"><b>${product.product_id}</b></th>
                             <th><img src="${product.product_img}"
                                     alt="">
                                 <p>${product.product_name}</p>
                             </th>
-                            <th>克重:26g*10袋口味:五香味</th>
+                            <th>老八蜜汁汉堡</th>
                             <th>${product.product_price}</th>
                             <th><button id="numjian">-</button><input type="text" value="${product.product_num}" id="shuliang"><button id="numjia">+</button></th>
-                            <th>小计：${xj} 元</th>
+                            <th>小计:&nbsp;&nbsp;${product.product_xj}&nbsp;&nbsp;元</th>
                             <th id="del">删除</th>
                         </tr>`)
         })
-        zongji = xj
-        $('#zongji').html(zongji)
+        $('tbody').on('click', '#numjia', function () {
+            // 用户点击+
+            var that = $(this);
+            var idA = parseInt(that.parent().siblings().eq(0).children("b").html());
+
+            for (var i = 0; i < productList.length; i++) {
+                if (productList[i].product_id == idA) {
+                    var numbh = productList[i].product_num; //初始化数值
+                    numbh++
+                    productList[i].product_num = numbh;   //更新本地存储的数量
+                    that.siblings('#shuliang').eq(0).val(numbh) //颜面更新
+                    var xj = numbh * productList[i].product_price; //更新小计
+                    xj = xj.toFixed(2);
+                    productList[i].product_xj = xj;
+                    that.parent().siblings().eq(4).html("小计：" + xj + "元");
+                    setCart(productList)
+                    var zongjia = [];
+                    var zong = 0
+                    for (var i = 0; i < productList.length; i++) {
+                        var a = productList[i].product_xj;
+                        zongjia.push(a)
+                    }
+                    for (var j = 0; j < zongjia.length; j++) {
+                        var b = Number(zongjia[j]);
+                        zong += b
+                    }
+                    $("#zongji").html(zong)
+                    break;
+                }
+            }
+
+        })
+        $('tbody').on('click', '#numjian', function () {
+            // 用户点击-
+            var that = $(this);
+            var idA = parseInt(that.parent().siblings().eq(0).children("b").html());
+            for (var i = 0; i < productList.length; i++) {
+                if (productList[i].product_id == idA) {
+                    var numbh = productList[i].product_num; //初始化数值
+                    numbh--
+                    if (numbh < 1) {
+                        numbh = 1
+                    }
+                    productList[i].product_num = numbh;   //更新本地存储的数量
+                    that.siblings('#shuliang').eq(0).val(numbh) //颜面更新
+                    var xj = numbh * productList[i].product_price; //更新小计
+                    xj = xj.toFixed(2);
+                    productList[i].product_xj = xj;
+                    that.parent().siblings().eq(4).html("小计" + xj + "元");
+                    setCart(productList)
+                    var zongjia = [];
+                    var zong = 0
+                    for (var i = 0; i < productList.length; i++) {
+                        var a = productList[i].product_xj;
+                        zongjia.push(a)
+                    }
+                    for (var j = 0; j < zongjia.length; j++) {
+                        var b = Number(zongjia[j]);
+                        zong += b
+                    }
+                    $("#zongji").html(zong)
+                    break;
+                }
+            }
+        })
+        var zongjia = [];
+        var zong = 0
+        for (var i = 0; i < productList.length; i++) {
+            var a = productList[i].product_xj;
+            zongjia.push(a)
+        }
+        for (var j = 0; j < zongjia.length; j++) {
+            var b = Number(zongjia[j]);
+            zong += b
+        }
+        $("#zongji").html(zong)
+        // 删除
+        $('tbody').on('click', "#del", function () {
+            that = $(this)
+            that.parent("tr").children("th").eq(0)
+            var idA = that.parent().children().eq(0).children("b").html();
+            for (var i = 0; i < productList.length; i++) {
+                if (productList[i].product_id == idA) {
+                    productList.splice(i, 1);
+                    setCart(productList)
+                    showList()
+                    break;
+                }
+            }
+
+        })
     }
 
 
