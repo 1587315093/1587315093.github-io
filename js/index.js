@@ -7,7 +7,7 @@ $.each($('.headnavbox'), function (index, item) {
             borderLeft: '1px solid #ddd'
         })
 
-        $(this).children('.headnavboxs').slideDown(100, 'linear')
+        $(this).children('.headnavboxs').stop().slideDown(100, 'linear')
     })
     $(item).mouseleave(function () {
         $(this).css({
@@ -15,7 +15,7 @@ $.each($('.headnavbox'), function (index, item) {
             borderRight: '1px solid #f5f5f5',
             borderLeft: '1px solid #f5f5f5'
         })
-        $(this).children('.headnavboxs').slideUp(1, 'linear')
+        $(this).children('.headnavboxs').stop().slideUp(1, 'linear')
     })
 })
 //分类板块的小箭头特效
@@ -231,4 +231,52 @@ $.ajax({
             node.appendTo('.like')
         }
     }
+})
+// 页面滚动的特效
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 600) {
+        // 显示回到顶部按钮
+        $('#headnav').css({
+            position: "fixed",
+            zIndex: 99,
+            left: 0,
+            top: 0
+        })
+        $('#tiaolou').css({
+            display: "block"
+        })
+    }
+    if ($(this).scrollTop() <= 600) {
+        // 隐藏回到顶部按钮
+        $('#headnav').css({
+            position: "relative",
+            left: 0,
+            top: 0
+        })
+        $('#tiaolou').css({
+            display: "none"
+        })
+    }
+})
+// 2 点击回到顶部按钮，页面滚动回顶部
+$('#fhtop').click(function () {
+    $(window).scrollTop(0)
+})
+$('#tiaolou').children().eq(0).click(function () {
+    $(window).scrollTop(900)
+})
+$('#tiaolou').children().eq(1).click(function () {
+    $(window).scrollTop(1000)
+})
+$('#tiaolou').children().eq(2).click(function () {
+    $(window).scrollTop(1100)
+})
+$('#tiaolou').children().eq(3).click(function () {
+    $(window).scrollTop(1200)
+})
+$('#tiaolou').children().eq(4).click(function () {
+    $(window).scrollTop(2000)
+})
+$('#tiaolou').children().eq(5).click(function () {
+    $(window).scrollTop(0)
 })

@@ -1435,3 +1435,55 @@ padding: 0 20px;
 .like {
     height:1365px;
 }
+#cenav {
+    position: fixed;
+    width: 35px;
+    height: 100%;
+    background-color: #383838;
+    right: 0;
+    top: 0;
+    text-align: center;
+}
+#cenav i{
+    display:block;
+    color: rgb(255,172,0);
+    font-size: 20px;
+    width: 35px;
+    line-height: 100px;
+}
+#cenav a{
+    display: block;
+    width: 35px;
+    height: 120px;
+    font-size:14px;
+    color: #fff;
+    margin-top: 20px;
+}
+#cenav a:hover{
+ background-color: rgb(255,172,0);
+
+}
+#cenav a:hover i{
+    color: #fff;
+}
+#tiaolou {
+    position: fixed;
+    left: 12%;
+    top: 40%;
+    /* display: none; */
+    width: 80px;
+    height: 300px;
+    background-color:#fff;
+    border: 1px solid gold;
+    text-align: center;
+}
+#tiaolou a{
+    display: block;
+    line-height: 50px;
+    font-size: 14px;
+    color: #999;
+}
+#tiaolou a:hover{
+    background-color:gold ;
+    color: #fff;
+}
