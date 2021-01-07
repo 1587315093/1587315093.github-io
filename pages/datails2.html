@@ -366,9 +366,9 @@
             product_xj: $("#add").data('xj')
         }
         var productList = getCart();
-        console.log(productList);
+
         if (productList.length == 0) {
-            console.log(1);
+            nweProduct.product_xj = nweProduct.product_price * nweProduct.product_num;
             productList.push(nweProduct);
             setCart(productList);
         } else {
@@ -382,6 +382,7 @@
                     return;
                 }
             }
+            nweProduct.product_xj = nweProduct.product_price * nweProduct.product_num;
             productList.push(nweProduct);
             setCart(productList);
         }

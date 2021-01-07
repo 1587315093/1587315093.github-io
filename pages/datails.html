@@ -366,6 +366,7 @@
         }
         var productList = getCart();
         if (productList.length == 0) {
+            nweProduct.product_xj = nweProduct.product_price * nweProduct.product_num;
             productList.push(nweProduct);
             setCart(productList);
         } else {
@@ -378,6 +379,7 @@
                     return;
                 }
             }
+            nweProduct.product_xj = nweProduct.product_price * nweProduct.product_num;
             productList.push(nweProduct);
             setCart(productList);
         }
