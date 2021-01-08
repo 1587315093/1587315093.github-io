@@ -128,7 +128,7 @@ $.ajax({
 var timeoutsetHour = document.getElementsByClassName('hours')[0];
 var timeoutsetFen = document.getElementsByClassName('fen')[0];
 var timeoutsetMiao = document.getElementsByClassName('miao')[0];
-var timeoutGettime = new Date('2021-1-10 23:00:00');
+var timeoutGettime = new Date('2021-1-9 24:00:00');
 timeou = setInterval(function () {
     var nowTime = new Date();
     var times = (timeoutGettime - nowTime) / 1000;
