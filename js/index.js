@@ -128,7 +128,7 @@ $.ajax({
 var timeoutsetHour = document.getElementsByClassName('hours')[0];
 var timeoutsetFen = document.getElementsByClassName('fen')[0];
 var timeoutsetMiao = document.getElementsByClassName('miao')[0];
-var timeoutGettime = new Date('2021-1-7 23:00:00');
+var timeoutGettime = new Date('2021-1-10 23:00:00');
 timeou = setInterval(function () {
     var nowTime = new Date();
     var times = (timeoutGettime - nowTime) / 1000;
@@ -189,7 +189,7 @@ var boxsmove1 = document.getElementsByClassName('boxsmove1')[0];
 var boxsmove2 = document.getElementsByClassName('boxsmove2')[0];
 var boxsmove3 = document.getElementsByClassName('boxsmove3')[0];
 var boxmove = document.getElementsByClassName("couponbox2body")[0]
-clearInterval(boxmove.timer)
+
 boxmove.timer = setInterval(function () {
     animate(boxsmove1, { top: -238 })
     animate(boxsmove2, { top: 0 }, function () {
@@ -203,7 +203,7 @@ boxmove.timer = setInterval(function () {
         })
     })
 }, 4000)
-boxmove.timer = setInterval(function () {
+boxmove.timers = setInterval(function () {
     $('.liveboxmove ').stop().animate({ marginTop: -214 }, 1500, function () {
         $('.liveboxmove ').stop().animate({ marginTop: -428 }, 1500, function () {
             $('.liveboxmove ').stop().animate({ marginTop: -642 }, 1500, function () {
